@@ -30,7 +30,7 @@ var _getAllFilesFromFolder = function (dir) {
 
 };*/
 //;http://localhost:5000
-var serviceWorkerVersion = 'v3::';
+var serviceWorkerVersion = 'v5::';
 //TODO: Add fucntion to populate assest by traversing selected folders
 //TODO: Show an example with minumal assests
 

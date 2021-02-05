@@ -1,6 +1,59 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.product-categories {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-shrink {
+    height: 100%;
+    overflow-y: auto;
+    background: #000;
+}
+
+.magic-container .sidebar-left-nav {
+    width: 300px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    position: absolute;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+body.sidebar-open .sidebar-left-nav {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+body.sidebar-open .col-md-10 {
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+.magic-container .col-md-10 {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
